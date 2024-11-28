@@ -14,6 +14,11 @@
 | Very less data can be sent through GET as URL length is limited to 2048 characters only | Huge amount of data can be send through POST as there are no restrictions |
 | Method used here is `doGet()`                                                           | Method used here is `doPost()`                                            |
 
+### Fetching Data
+- To fetch data from a search bar in a HTML page, we first we give an attribute called _name_ to the element.
+- Then using the name element, we fetch the data through the servlet code.
+- Here comes the use of the method `getParameter()`, and the parameter it is going to accept will be same as the value of _name_, attribute. (The parameter value should be a string, so add in double quotes).
+- This method is used with the _HttpServletRequest_ object. 
 
 
 

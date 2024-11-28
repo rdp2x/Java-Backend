@@ -31,7 +31,7 @@ GenericServlet
 ```Java
 public class Main extends HTTPServlet {
 	@override
-	public static void doGet(HTTPServletRequest request, HTTPServletRequest response) {
+	public static void service(HTTPServletRequest request, HTTPServletRequest response) {
 		// backend code
 	}
 }
@@ -40,3 +40,4 @@ public class Main extends HTTPServlet {
 > [!NOTE] Note
 > We also have to create one more file, the **Deployment Descriptor** file named as “web.xml”.
 
+- When extending the _HTTPServlet_ class, we need to throw the **IOException**, **ServletException**. 
